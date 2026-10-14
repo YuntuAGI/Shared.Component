@@ -1,0 +1,232 @@
+/* Extracted from yuntu_claw styles.css + glass-theme.css. Original gold/cream UI retained; selectors scoped for reuse. No YuntuShared VI overrides. */.yuntu-grid-shell .data-grid input.yuntu-grid-checkbox { width: 18px; height: 18px; padding: 0; margin: 0; accent-color: var(--brand); cursor: pointer; vertical-align: middle; }
+.yuntu-grid-shell .data-grid input.yuntu-grid-checkbox:disabled { cursor: default; opacity: .5; }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) {
+  font-family: "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif;
+  color: #16213f; font-synthesis: none;
+  --navy: #141d3a; --purple: #5b3fc4; --violet: #7652c9; --pink: #bd2369;
+  --line: #d8e1ef; --muted: #72809a; --soft: #edf3fb; --white: #fff;
+}
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) * { box-sizing: border-box }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) button, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select { font: inherit }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) button { border: 0; cursor: pointer }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) button:disabled { cursor: not-allowed; opacity: .48 }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select { color: #203153; border: 1px solid #ced9e8; background: #fff; outline: none; border-radius: 10px; transition: .18s border, .18s box-shadow }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea:focus, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input:focus, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select:focus { border-color: #7854d6; box-shadow: 0 0 0 3px rgba(108,73,204,.11) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea { width: 100%; min-height: 104px; padding: 12px 13px; resize: vertical; line-height: 1.55 }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select { height: 42px; padding: 0 12px; width: 100% }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button { min-height: 40px; padding: 8px 16px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; border-radius: 8px; background: #5a40c4; color: #fff; font-weight: 650; white-space: nowrap; transition: transform .12s, box-shadow .12s, filter .12s }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button:hover:not(:disabled) { filter: brightness(1.06); box-shadow: 0 5px 13px rgba(69,45,160,.15); transform: translateY(-1px) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-soft { background: #e6edf6; color: #344767 }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-purple { background: #6841be }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-accent { background: #bd2167 }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-danger { background: #d94757 }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-success { background: #14a957 }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-warn { background: #f59f0b }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-cyan { background: #14abc4 }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-dark { background: #203f69 }.yuntu-grid-shell .table-wrap { height: 100%; overflow: auto }.yuntu-grid-shell .table-wrap table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: 13px }.yuntu-grid-shell .table-wrap th { position: sticky; top: 0; z-index: 1; padding: 12px 10px; color: #192842; background: #eaf0f7; border-bottom: 1px solid #d8e0ec; text-align: center }.yuntu-grid-shell .table-wrap td { height: 42px; padding: 8px 10px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-bottom: 1px solid #e6ebf2 }.yuntu-grid-shell .table-wrap tbody tr { user-select: none }.yuntu-grid-shell .table-wrap tbody tr:nth-child(even) td { background: #f1f5fa }.yuntu-grid-shell .table-wrap tbody tr:hover td { background: #e4eaff; color: #293a74 }.yuntu-grid-shell .table-wrap tr.selected td, .yuntu-grid-shell .table-wrap tbody tr.selected:nth-child(even) td { background: #d7e1ff; color: #233c81; box-shadow: inset 0 1px rgba(93,73,201,.12), inset 0 -1px rgba(93,73,201,.12) }
+.yuntu-grid-shell .table-wrap .empty-table-row td { height: 220px; padding: 0; background: #fff !important; border-bottom: 0; white-space: normal }.yuntu-grid-shell .table-wrap .empty-table-row:hover td { color: inherit }
+.yuntu-grid-row-menu { position: fixed; z-index: 100; width: 190px; padding: 6px; border: 1px solid #d4ddea; border-radius: 8px; background: #fff; box-shadow: 0 14px 38px rgba(25,37,67,.24); animation: context-in .1s ease-out }.yuntu-grid-row-menu button { display: flex; align-items: center; gap: 9px; width: 100%; padding: 9px 10px; border-radius: 5px; color: #243654; background: transparent; text-align: left; font-size: 13px }.yuntu-grid-row-menu button:hover { background: #edf2ff; color: #523ab0 }.yuntu-grid-row-menu button.danger:hover { background: #fff0f2; color: #c9364e }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty { min-height: 240px; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; color: #9ba7b9; text-align: center }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty svg { color: #c2cada }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty strong { color: #6f7d92; font-size: 15px }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty span { font-size: 13px; max-width: 400px }
+.yuntu-grid-clear-backdrop { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; background: rgba(13,19,39,.46); backdrop-filter: blur(2px) }.yuntu-grid-clear-modal { width: min(760px, calc(100vw - 60px)); padding: 20px; border-radius: 14px; background: white; box-shadow: 0 26px 70px rgba(10,17,40,.25) }.yuntu-grid-clear-modal .modal-title { display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-weight: 800 }.yuntu-grid-clear-modal .modal-title > div { display: flex; align-items: center; gap: 9px }.yuntu-grid-clear-modal .modal-title button { background: transparent; color: #6f7b8f }.yuntu-grid-clear-modal p { color: #596780 }.yuntu-grid-clear-modal .modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 18px }.yuntu-grid-clear-modal .modal-footer .yg-button { min-width: 140px }
+.yuntu-grid-shell .table-wrap {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.yuntu-grid-shell .table-wrap table {
+  width: 100%;
+}
+.yuntu-grid-shell .table-wrap .empty-table-row td {
+  height: 180px;
+}
+.yuntu-grid-shell .data-grid {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  background: #fff;
+  scrollbar-gutter: stable;
+}
+.yuntu-grid-shell .data-grid table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.yuntu-grid-shell .data-grid th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  overflow: visible;
+  color: #192842;
+  white-space: nowrap;
+}
+.yuntu-grid-shell .data-grid .column-heading {
+  display: block;
+  min-width: 0;
+  padding-right: 10px;
+  overflow: hidden;
+  color: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: grab;
+}
+.yuntu-grid-shell .data-grid th:active .column-heading { cursor: grabbing }
+.yuntu-grid-shell .data-grid th.dragging-column {
+  opacity: .58;
+  box-shadow: inset 0 -3px #6546ce;
+}
+.yuntu-grid-shell { position: relative; min-height: 0; height: 100%; display: flex; flex-direction: column; background: var(--surface, #fffdf9) }
+.yuntu-grid-toolbar { position: relative; flex: none; min-height: 46px; padding: 7px 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 14px; border-bottom: 1px solid var(--line, #e9dfd4); background: var(--surface, #fffdf9) }
+.yuntu-grid-summary, .yuntu-grid-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px }.yuntu-grid-summary strong { color: var(--text, #211c18); font-size: 12px; font-variant-numeric: tabular-nums }
+.yuntu-grid-add-filter, .yuntu-grid-reset { min-height: 32px; padding: 0 10px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line, #ddd3c7); border-radius: 7px; background: var(--surface, #fffdf9); color: var(--text-secondary, #62574e); cursor: pointer }.yuntu-grid-add-filter:hover, .yuntu-grid-reset:hover { color: var(--brand-strong, #9f682c); border-color: var(--brand, #c88f45); background: var(--brand-soft, #fff2df) }.yuntu-grid-add-filter:focus-visible, .yuntu-grid-reset:focus-visible { outline: 2px solid var(--brand, #c88f45); outline-offset: 2px }
+.yuntu-grid-filter-popover { position: fixed; z-index: 125; max-height: calc(100vh - 32px); padding: 12px; display: grid; grid-template-columns: minmax(140px, 1fr) minmax(120px, .8fr) minmax(150px, 1fr) minmax(150px, 1fr); align-items: end; gap: 10px; overflow: auto; border: 1px solid var(--border, #ddd3c7); border-radius: 10px; background: var(--card, #fffdf9); box-shadow: 0 14px 34px rgba(36,26,20,.18) }.yuntu-grid-filter-popover label { min-width: 0; display: grid; gap: 5px; color: var(--muted, #766b61); font-size: 12px }.yuntu-grid-filter-popover input, .yuntu-grid-filter-popover select { width: 100%; height: 36px }.yuntu-grid-filter-buttons { grid-column: 1 / -1; display: flex; justify-content: flex-end; gap: 8px }
+.yuntu-grid-filter-chips { flex: none; padding: 7px 10px; display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--line, #e9dfd4); background: var(--stone, #f2ede5) }.yuntu-grid-filter-chips button { min-height: 30px; max-width: 100%; padding: 0 8px; display: inline-flex; align-items: center; gap: 5px; overflow: hidden; border: 1px solid #dfc49f; border-radius: 999px; background: #fff8ed; color: #6b4925; cursor: pointer; text-overflow: ellipsis; white-space: nowrap }.yuntu-grid-filter-chips button:hover { border-color: var(--brand, #c88f45); background: var(--brand-soft, #fff2df) }
+.yuntu-grid-shell > .table-wrap { min-height: 0; flex: 1 }.yuntu-grid-shell .data-grid .column-heading { min-width: 0; display: flex; align-items: center }.yuntu-grid-shell .data-grid .column-heading > button { width: 100%; min-height: 30px; padding: 0 4px; border: 0; background: transparent; color: inherit; font: inherit; font-weight: 700; cursor: pointer }.yuntu-grid-shell .data-grid .column-heading > button:disabled { cursor: grab }.yuntu-grid-shell .data-grid .column-heading > button:focus-visible { outline: 2px solid var(--brand, #c88f45); outline-offset: -2px; border-radius: 4px }.yuntu-grid-clear-modal { width: min(450px, calc(100vw - 32px)) }@media (max-width: 1100px) { .yuntu-grid-filter-popover { grid-template-columns: 1fr 1fr } }@media (max-width: 1100px) {.yuntu-grid-filter-buttons { grid-column: 1 / -1 } }
+.yuntu-grid-shell .data-grid td {
+  min-width: 0;
+  overflow: hidden;
+  color: #253651;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.yuntu-grid-shell .data-grid tbody tr[data-row-index] { cursor: default }
+.yuntu-grid-shell .column-resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  width: 9px;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: col-resize;
+  touch-action: none;
+}
+.yuntu-grid-shell .column-resizer-left { right:auto; left:0 }
+.yuntu-grid-shell .column-resizer::after {
+  position: absolute;
+  top: 7px;
+  bottom: 7px;
+  left: 4px;
+  width: 1px;
+  background: #cbd5e4;
+  content: '';
+}
+.yuntu-grid-shell .column-resizer-left::after { left:3px }
+.yuntu-grid-shell .column-resizer:hover::after, .yuntu-grid-shell .column-resizer:focus-visible::after, body.resizing-grid-column .column-resizer::after {
+  width: 2px;
+  background: #6546ce;
+}
+body.resizing-grid-column, body.resizing-grid-column * {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
+.yuntu-grid-selection-box {
+  position: fixed;
+  z-index: 100;
+  border: 1px solid #6546ce;
+  border-radius: 3px;
+  background: rgba(101, 70, 206, .13);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .72) inset;
+  pointer-events: none;
+}
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) {
+  font-family: YuntuSans, "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif;
+  color: #211c18;
+  --brand: #c88f45;
+  --brand-strong: #a86f2d;
+  --brand-soft: #fff2df;
+  --espresso: #1d1713;
+  --cabinet: #241a14;
+  --workspace: #f2ede5;
+  --surface: #fffdf9;
+  --stone: #f7f2ea;
+  --ink: #211c18;
+  --muted: #766b61;
+  --line: #ddd3c7;
+  --surface-muted: #f7f2ea;
+  --text: #211c18;
+  --text-secondary: #4f463f;
+  --text-muted: #766b61;
+  --shadow-sm: 0 8px 22px rgba(45,32,22,.06);
+  --success: #2f7d57;
+  --warning: #a56a1a;
+  --danger: #b94a3f;
+  --white: #fffdf9;
+  --soft: #f7f2ea;
+  --purple: #c88f45;
+  --violet: #a86f2d;
+  --pink: #b94a3f;
+  --navy: #241a14;
+}
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) button, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select { color: var(--ink) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) button:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select { border-color: var(--line); border-radius: 8px; background: var(--surface) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea:focus, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input:focus, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(200,143,69,.16) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input[type="checkbox"], :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input[type="radio"] { accent-color: var(--brand-strong) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button { color: #2e2115; background: var(--brand); box-shadow: none; transition: background .16s, box-shadow .16s, transform .16s }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button:hover:not(:disabled) { filter: none; background: #d39b55; box-shadow: 0 6px 15px rgba(168,111,45,.15); transform: translateY(-1px) }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-soft { color: var(--ink); border: 1px solid var(--line); background: var(--surface) }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-soft:hover:not(:disabled) { color: var(--brand-strong); background: var(--brand-soft) }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-purple, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-accent, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-cyan, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-dark { color: #2e2115; background: var(--brand) }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-success { color: #fff; background: var(--success) }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-warn { color: #fff; background: var(--warning) }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-danger { color: #fff; background: var(--danger) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-danger-soft { color: var(--danger); border: 1px solid #cf8f87; background: var(--surface) }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button-danger-soft:hover:not(:disabled) { color: #fff; background: var(--danger); box-shadow: 0 6px 15px rgba(190,66,57,.16) }
+.yuntu-grid-shell .table-wrap, .yuntu-grid-shell .data-grid { background: var(--surface) }.yuntu-grid-shell .table-wrap th { color: #4a4038; border-color: var(--line); background: #eee6dc }.yuntu-grid-shell .table-wrap td { color: #423a34; border-color: #eee6dc }.yuntu-grid-shell .table-wrap tbody tr:nth-child(even) td { background: #faf6f0 }.yuntu-grid-shell .table-wrap tbody tr:hover td { color: var(--ink); background: #fff2df }.yuntu-grid-shell .table-wrap tr.selected td, .yuntu-grid-shell .table-wrap tbody tr.selected:nth-child(even) td { color: #5b3b19; background: #f8e4c5; box-shadow: inset 0 1px rgba(200,143,69,.25), inset 0 -1px rgba(200,143,69,.25) }.yuntu-grid-shell .data-grid th { color: #4a4038 }.yuntu-grid-shell .data-grid td { color: #423a34 }.yuntu-grid-shell .data-grid th.dragging-column { box-shadow: inset 0 -3px var(--brand) }.yuntu-grid-shell .column-resizer::after { background: #cfc3b6 }.yuntu-grid-shell .column-resizer:hover::after, .yuntu-grid-shell .column-resizer:focus-visible::after, body.resizing-grid-column .column-resizer::after { background: var(--brand-strong) }.yuntu-grid-selection-box { border-color: var(--brand-strong); background: rgba(200,143,69,.14) }
+.yuntu-grid-shell .data-grid th.sticky-right, .yuntu-grid-shell .data-grid td.sticky-right { position:sticky; right:0; z-index:2; box-shadow:-1px 0 0 var(--line),-8px 0 14px rgba(54,40,28,.04) }.yuntu-grid-shell .data-grid th.sticky-right { z-index:4; background:#eee6dc }.yuntu-grid-shell .data-grid td.sticky-right { background:var(--surface) }.yuntu-grid-shell .data-grid tbody tr:nth-child(even) td.sticky-right { background:#faf6f0 }.yuntu-grid-shell .data-grid tbody tr:hover td.sticky-right { background:#fff2df }.yuntu-grid-shell .data-grid tr.selected td.sticky-right { background:#f8e4c5 }
+.yuntu-grid-clear-backdrop { background: rgba(36,26,20,.48) }.yuntu-grid-clear-modal { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); box-shadow: 0 26px 70px rgba(45,32,22,.26) }.yuntu-grid-clear-modal p { color: var(--muted) }.yuntu-grid-row-menu { max-width: calc(100vw - 16px); max-height: calc(100vh - 16px); overflow-y: auto; border-color: var(--line); background: var(--surface); box-shadow: 0 14px 38px rgba(45,32,22,.2) }.yuntu-grid-row-menu button { color: var(--ink) }.yuntu-grid-row-menu button:hover { color: var(--brand-strong); background: var(--brand-soft) }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty { color: #ad9f92 }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty svg { color: #c9b9aa }:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty strong { color: var(--muted) }@media (prefers-reduced-motion: reduce) {
+  :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) * { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important } }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) {
+  --brand-strong: #89551f;
+  --muted: #685c51;
+  --text-muted: #685c51;
+  --success: #256b49;
+  --warning: #895719;
+  --glass-surface: rgba(255, 253, 249, .86);
+  --glass-overlay: rgba(255, 253, 249, .96);
+  --glass-edge: rgba(156, 124, 89, .28);
+  --glass-shadow: 0 8px 28px rgba(66, 45, 24, .065), inset 0 1px 0 rgba(255, 255, 255, .9);
+  --ui-viewport-height: calc(100dvh / var(--ui-render-scale, 1));
+  --ui-viewport-width: calc(100dvw / var(--ui-render-scale, 1));
+  /* Shared aliases used by the automation editor and grids. */
+  --primary: var(--brand-strong);
+  --panel: var(--surface);
+  --panel-soft: var(--stone);
+  --border: var(--line);
+  --card: var(--surface);
+}
+.yuntu-grid-clear-modal, .yuntu-grid-row-menu {
+  background: var(--glass-overlay);
+  border-color: var(--glass-edge);
+  backdrop-filter: blur(20px) saturate(110%);
+  box-shadow: 0 18px 50px rgba(45,32,22,.17), inset 0 1px 0 rgba(255,255,255,.95);
+}
+.yuntu-grid-clear-backdrop { backdrop-filter: blur(5px); }
+body > .yuntu-grid-clear-backdrop { z-index: 1000; padding: 16px; overflow: auto; overscroll-behavior: contain; }
+body > .yuntu-grid-clear-backdrop > .yuntu-grid-clear-modal { min-width: 0; min-height: 0; max-width: calc(var(--ui-viewport-width) - 32px); max-height: calc(var(--ui-viewport-height) - 32px); }
+body > .yuntu-grid-row-menu { z-index: 1120; max-width: calc(var(--ui-viewport-width) - 16px); max-height: calc(var(--ui-viewport-height) - 16px); }
+body > .yuntu-grid-filter-popover { z-index: 1125; }
+body > .yuntu-grid-selection-box { z-index: 1100; }
+.yuntu-grid-clear-modal { max-width: calc(var(--ui-viewport-width) - 32px); max-height: calc(var(--ui-viewport-height) - 32px); overflow-y: auto; }
+.yuntu-grid-clear-backdrop.yuntu-grid-clear-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  padding: 16px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.yuntu-grid-clear-backdrop > .yuntu-grid-clear-modal { max-width: 100%; max-height: 100%; }
+.yuntu-grid-clear-modal .modal-footer { flex-wrap: wrap; }
+
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) input, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) textarea, :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) select, .yuntu-grid-shell .table-wrap, .yuntu-grid-shell .data-grid {
+  background: #fffdf9;
+}
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-empty { color: var(--muted); }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button { white-space: normal; line-height: 1.4; }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) .yg-button:disabled { opacity: 1; color: #716458; background: #e8dfd4; border-color: #cbbcac; box-shadow: none; }
+.yuntu-grid-shell .data-grid th button:disabled { opacity: 1; color: inherit; }
+.yuntu-grid-shell .table-wrap { container-type: inline-size; }
+.yuntu-grid-shell .table-wrap .yg-empty { width: 100cqw; max-width: 100%; }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) button:focus-visible { outline-color: var(--brand-strong); }
+@supports not (backdrop-filter: blur(1px)) {
+  .yuntu-grid-clear-modal, .yuntu-grid-row-menu { background: #fffdf9; } }
+@media (prefers-reduced-transparency: reduce) {
+  .yuntu-grid-clear-modal, .yuntu-grid-row-menu { background: #fffdf9; backdrop-filter: none; } }
+@media (prefers-reduced-motion: reduce) {
+  :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) { font-size: 16px; line-height: normal; }
+:where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error), :where(.yuntu-grid-shell, .yuntu-grid-filter-popover, .yuntu-grid-row-menu, .yuntu-grid-clear-backdrop, .yuntu-grid-selection-box, .yuntu-grid-error) * { box-sizing: border-box; }
+.yuntu-grid-error { color: var(--danger); padding: 10px; }

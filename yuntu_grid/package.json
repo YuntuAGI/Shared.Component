@@ -1,0 +1,17 @@
+{
+  "name": "@yuntu/grid",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": { "types": "./src/index.d.ts", "import": "./dist/index.js" },
+    "./styles.css": "./dist/style.css",
+    "./src": "./src/index.js"
+  },
+  "files": ["dist", "src", "README.md"],
+  "sideEffects": ["**/*.css"],
+  "peerDependencies": { "react": ">=18 <20", "react-dom": ">=18 <20" },
+  "dependencies": { "lucide-react": "1.45.0" }
+}

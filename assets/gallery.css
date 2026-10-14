@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f2ede5; color: #211c18; font: 16px/1.6 "Microsoft YaHei UI", "PingFang SC", sans-serif; }
+a { color: #89551f; text-underline-offset: 4px; }
+button { font: inherit; cursor: pointer; }
+.library-header { padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid #ddd3c7; background: #fffdf9; }
+.library-header > div { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
+.library-header strong { font-size: 21px; }.library-header span { color: #766b61; font: 13px Consolas, monospace; }
+.library-layout { display: grid; grid-template-columns: 218px minmax(0, 1fr); min-height: calc(100vh - 78px); }
+.library-sidebar { padding: 28px 18px; border-right: 1px solid #ddd3c7; }
+.library-sidebar h2 { margin: 0 10px 16px; font-size: 14px; color: #766b61; font-weight: 500; }
+.library-sidebar nav { display: grid; gap: 8px; }
+.library-sidebar button { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 1px solid transparent; border-radius: 8px; color: #4f463f; background: transparent; text-align: left; }
+.library-sidebar button[aria-current="page"] { background: #f8e4c5; border-color: #c88f45; color: #5b3b19; font-weight: 700; }
+.library-sidebar p { padding: 20px 10px; font-size: 12px; color: #766b61; border-top: 1px solid #ddd3c7; margin-top: 28px; }
+.library-main { min-width: 0; padding: 30px; }
+.component-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.component-header h1 { font-size: 26px; line-height: 1.4; margin: 5px 0; }.component-header p { color: #766b61; font-size: 14px; margin: 0; }
+#component-category { font-size: 12px; color: #89551f; }.component-links { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 13px; }.component-links span { background: #eee6dc; border-radius: 5px; padding: 3px 8px; color: #766b61; }
+button:focus-visible, a:focus-visible { outline: 2px solid #c88f45; outline-offset: 3px; }
+@media (max-width: 800px) { .library-layout { grid-template-columns: 1fr; }.library-sidebar { padding: 12px 18px; border-right: 0; border-bottom: 1px solid #ddd3c7; }.library-sidebar h2,.library-sidebar p { display: none; }.library-sidebar nav { display: flex; flex-wrap: wrap; }.library-sidebar button { width: auto; }.library-main { padding: 20px 16px; }.library-header { padding: 16px; }.library-header > a { font-size: 13px; } }

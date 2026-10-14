@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+test-results/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+# dist and demo bundles are intentionally tracked for offline previews / deep copies.
