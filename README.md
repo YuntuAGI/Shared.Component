@@ -6,11 +6,13 @@
 
 ## 查看演示
 
-直接双击根目录 **index.html**，在左侧选择组件。无需启动服务、无需联网、无需先安装 Node.js。离线演示包已随目录保存；不要只复制 HTML 而遗漏 JS/CSS。
+**在线演示：[打开云途公共组件库](https://yuntuagi.github.io/Shared.Component/)**，无需下载或安装，在左侧选择组件即可操作。
+
+离线使用：下载完整仓库后，双击根目录 **index.html**。无需启动服务、无需联网、无需先安装 Node.js。离线演示包已随目录保存；不要只复制 HTML 而遗漏 JS/CSS。GitHub 仓库内直接点击 HTML 文件会显示源码，请使用上方在线地址。
 
 | 组件 | 说明 | 文档 | 独立演示 |
 | --- | --- | --- | --- |
-| yuntu_grid | 从获客项目抽取的云途数据表格，保留原有 UI | [README](yuntu_grid/README.md) | [打开演示](yuntu_grid/demo/index.html) |
+| yuntu_grid | 从获客项目抽取的云途数据表格，保留原有 UI | [README](yuntu_grid/README.md) | [在线演示](https://yuntuagi.github.io/Shared.Component/yuntu_grid/demo/) |
 
 ## 深复制使用
 
@@ -55,6 +57,8 @@ npm run test:copy
 首次没有 lockfile 时使用 `npm install`。项目 `.npmrc` 保留 `legacy-peer-deps=true`，避免 npm 10 在本工具链的可选 peer 依赖解析中崩溃。`test:ui` 需要 Playwright Chromium；未安装时执行 `npx playwright install chromium`。
 
 构建会更新每个组件的 `dist/`、`demo/bundle/` 和 `assets/catalog.js`。这些产物需要与源码一起保存，保证拿到目录就能看演示。构建不会访问业务账号或发出业务操作。
+
+GitHub Pages 从 `main` 分支根目录发布；推送更新后的演示产物会自动更新在线站点。保留根目录 `.nojekyll`，直接发布静态文件。
 
 ## 新增其他组件
 

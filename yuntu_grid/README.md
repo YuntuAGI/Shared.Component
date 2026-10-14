@@ -16,7 +16,9 @@ IP 属地查询、平台账号、发送任务、打开抖音视频等业务能�
 
 ## 打开演示
 
-双击本目录 `demo/index.html`，或使用组件库根目录 `index.html`。现成离线包不依赖 CDN、开发服务器和 npm。
+[在线演示](https://yuntuagi.github.io/Shared.Component/yuntu_grid/demo/) · [全部组件](https://yuntuagi.github.io/Shared.Component/)
+
+离线：下载完整仓库后，双击本目录 `demo/index.html`，或使用组件库根目录 `index.html`。现成离线包不依赖 CDN、开发服务器和 npm。
 
 ## 接入方式一：深复制源码
 
